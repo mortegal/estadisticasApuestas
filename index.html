@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Histórico Apuestas</title>
+    <script src="jquery-1.11.2.min.js"></script>
+	<script src="index.js"></script>
+    
+
+</head>
+
+<body style="font-family:arial, helvetica">
+
+    <h1>Utilidad para cargar estadísticas de apuestas de BET365</h1>
+
+    Utilidad para generar los datos en la excel de apuestas a partir del Histórico de apuestas de la web de bet365.
+    <br/>
+    <ol>
+        <li>Introduce el valor de tu unidad</li>
+        <li>Copia el historico que elijas desde bet365 y pegalo en el recuadro</li>
+        <li>Pulsa el botón generar</li>
+        <li>Copia de Resultado y pega directamente en la excel.</li>
+    </ol>
+
+
+    <h3>Entrada</h3>
+
+    Introduce el valor de tu unidad:
+    <input type="text" id="unidad" style="float:center" size="6" maxlength="6" /> €
+    <br/>
+    <br/> Datos del Histórico de Bet365
+
+    <br/>
+    <textarea id="betData" style="width:40%;height:200px"></textarea>
+    <br/>
+    <br/>
+    <input type="button" value="Generar" id="generar" style="float:center" />
+    <input type="button" value="Borrar" id="borrar" style="float:right;margin-right:60%" />
+    <br/>
+    <br/>
+    <h3>Resultado</h3>
+    <textarea id="resultado" style="width:80%;height:200px;background-color:#eee" readonly></textarea>
+
+    <br/>
+
+
+</body>
+
+
+</html>
